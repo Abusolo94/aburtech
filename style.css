@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    background: black;
+    color: white;
+    padding: 20px;
+ 
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.main-container .nav-bar .log-info{
+    display: flex;
+    align-items: center;
+}
+.main-container .nav-bar .log-info img{
+    width: 80px;
+    height: 50px;
+    border-radius: 11px;
+    margin-right:10px ;
+}
+.main-container .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(46, 46, 46);
+    position: fixed;
+    width: 100%;
+    top: 2px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px grey;
+    background: transparent;
+}
+.nav-bar.active{
+    background: rgb(46, 46, 46);
+    box-shadow: 0 2px 4px white;
+
+}
+.main-container .nav ul{
+    display: flex;
+    align-items: center;
+   
+}
+.main-container .nav ul li{
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.main-container .nav ul li:hover {
+    color: rgb(26, 153, 226);
+   
+ 
+}
+.main-container .nav ul li a{
+    margin: 0 10px;
+    position: relative;
+    color: white;
+ 
+   
+}
+.main-container .nav a.active{
+    color:rgb(28, 176, 239); 
+}
+.main-container .nav ul li:nth-last-child(1){
+    margin-right: 20px;
+}
+/* .main-container .nav ul li a::before{
+    content: "";
+    width: 50px;
+    background: white;
+    height: 2px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+ 
+}
+.main-container .nav ul li a::before:hover{
+
+    background: red;
+} */
+
+.main-container .menu-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.main-container .menu-icon:hover{
+    color: lightblue;
+}
+ .main-container .home-aburtech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   
+  
+
+ 
+   
+ }
+
+ .main-container .home-aburtech .aburtech-infor{
+    line-height: 1.99rem;
+    margin-right: 10px;
+ }
+ h1{
+    color: lightskyblue;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+ }
+p{
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 1.88rem;
+ }
+ .btn{
+    width: 100%;
+    padding: 10px;
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+
+ }
+ .btn:hover{
+    background: lightblue;
+ }
+ .main-container .home-aburtech img{
+    border-radius: 12px;
+   height: 500px;
+ 
+
+ }
+ .main-container .about-aburtech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+ }
+ .main-container .about-aburtech img{
+    width: 450px;
+    height: 600px;
+    margin-right: 2rem;
+    border-radius: 20px;
+ }
+ .main-container .team-aburtech{
+    height: 100vh;
+    margin-bottom: 4rem;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+ }
+.main-container .team-aburtech .team-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+ .main-container .team-aburtech .team-info .team-card{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(46, 46, 46);
+    padding: 10px;
+    border-radius: 10px;
+   
+ }
+ .main-container .team-aburtech .team-info .team-card h1{
+    font-size: 30px;
+ }
+ .main-container .team-aburtech .team-info .team-card p{
+    text-align: center;
+ }
+.main-container .team-aburtech .team-info .team-card img{
+    width: 200px;
+    height: 200px;
+    border-radius:100px ;
+}
+
+
+.main-container .services-aburtech{
+    height: 100vh;
+    margin-top: 6rem;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+
+}
+.main-container .services-aburtech h2{
+    text-align: center;
+    margin-bottom: 1.88rem;
+
+}
+.main-container .services-aburtech .services-info .service-card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+.main-container .services-aburtech .services-info .service-card{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background: rgb(21, 21, 22);
+   
+}
+.main-container .services-aburtech .services-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.main-container .services-aburtech .services-info .service-card .btn{
+    margin-top: 2px;
+    font-size: 15px;
+    padding: 5px;
+    width: 50%;
+    cursor: pointer;
+}
+.contact-aburtech{
+    height: 100vh;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+.contact-aburtech img{
+    width: 400px;
+    height: 500px;
+    margin-left: 2rem;
+    border-radius: 10px;
+    margin-top: 6rem;
+}
+.contact-aburtech img:hover{
+    border: 2px solid lightblue;
+    cursor: pointer;
+}
+.contact-aburtech .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+
+}
+
+.contact-aburtech .contact-info .contacts-cards .contact-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    line-height: 1.88rem;
+
+}
+.testmonial-aburtech{
+    height: 100vh;
+    margin-top: 4rem;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+.testmonial-aburtech .testmonial-info .testmonial-card h1{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.testmonial-aburtech .testmonial-info .testmonial-card{
+    width: 400px;
+    background: black;
+    padding: 10px;
+    box-shadow: 2px 4px 6px white;
+    margin: 5px;
+}
+.testmonial-aburtech .testmonial-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.footer-aburtech{
+    background: rgb(74, 74, 74);
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    position: fixed;
+    bottom: 0.88px;
+    display: none;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+  
+}
+.footer-aburtech.active{
+    display: block;
+}
+.footer-aburtech .footer-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center   ;
+    flex-wrap: wrap;
+  
+   
+}
+.footer-aburtech h3{
+    text-align: center;
+}
+
+.footer-aburtech .footer-info .link-card ul li a{
+   /* text-align: inherit; */
+    color: rgb(95, 168, 232);
+    font-size: 40px;
+}
+.footer-aburtech  nav a:hover{
+    color: blue;
+}
+
+.main-container .nav-bar .nav.active{
+    right: -150px;
+}
+
+
+@media (max-width: 683px) {
+    .main-container .nav-bar .nav{
+        display: block;
+       position: absolute;
+       top: 100%;
+       right: 2px;
+       background: black;
+       padding: 10px;
+       transition: all .2s ease;
+    }
+    
+
+    .main-container .nav-bar .nav ul{
+        display: inline-block;
+    }
+    .main-container .nav-bar nav li{
+        margin: 10px 10px;
+    }
+   
+    .main-container .nav{
+        display: none;
+    }
+    .main-container .menu-icon{
+        display: block;
+    }
+    .main-container .home-aburtech{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: url("./techbackg.avif");
+        padding: 10px;
+        background-size: cover;
+        height: 60vh;
+        border-radius: 12px;
+        margin-top: 3.88rem;
+     }
+     .main-container .home-aburtech img{
+        display: none;
+     }
+
+     .main-container .about-aburtech{
+      flex-direction: column;
+      margin-top: 2rem;
+       
+     }
+     .main-container .about-aburtech img{
+        width: 100%;
+     }
+     .main-container .team-aburtech {
+        padding: 10px;
+     }
+     .main-container .team-aburtech .team-info .team-card{
+        width: 250px;
+       
+       
+     }
+     .main-container .services-aburtech{
+        margin-top: 1rem;
+     }
+     .main-container .services-aburtech .services-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 1rem;
+    }
+
+    .contact-aburtech{
+        margin-top: 2rem;
+        height: 80vh;
+       
+    }
+    .contact-aburtech img{
+        display: none;
+       
+        
+    }
+    .testmonial-aburtech{
+        height: 60vh;
+        margin-top: 1px;
+        /* overflow-y: scroll; */
+    }
+    .testmonial-aburtech .testmonial-info{
+        grid-template-columns: 1fr ;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 500px;
+    }
+    .testmonial-aburtech .testmonial-info .testmonial-card{
+        width: 100%;
+       
+    
+}}
+
+@media (max-width: 1366px) {
+    .main-container{
+        padding: 30px;
+    }
+  
+
+}
